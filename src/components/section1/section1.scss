@@ -1,0 +1,75 @@
+@import "../../assets/varibles.scss";
+@import "../../assets/responsive.scss";
+.section1 {
+  // height: calc(100vh - 7.375rem);
+  height: 100vh;
+  background-color: rgba(246, 244, 241, 0.5);
+  @include md {
+    height: 100%;
+  }
+  @include lg {
+    height: 100%;
+    padding-bottom: 1.5rem;
+  }
+  .section1Container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -7rem;
+    gap: 3rem;
+    @include lg {
+      margin-top: 0;
+    }
+    @include md {
+      flex-direction: column;
+      margin-top: 0;
+    }
+    .left {
+      width: 100%;
+      @include md {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        color: $Font-colour;
+        font-size: 40px;
+        font-weight: 600;
+        @include lg {
+          font-size: 32px;
+        }
+        @include md {
+          text-align: center;
+          font-size: 22px;
+        }
+      }
+      p {
+        color: $Font-colour-light;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        @include md {
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+      button {
+        color: #fff;
+        width: 30%;
+        height: 56px;
+        border-radius: 12px;
+        border: none;
+        background: $button-colour;
+        align-self: center;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+    .right {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

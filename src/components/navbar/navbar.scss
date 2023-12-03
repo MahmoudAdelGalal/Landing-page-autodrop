@@ -1,0 +1,62 @@
+@import "../../assets/varibles.scss";
+@import "../../assets//responsive.scss";
+.navbar {
+  background-color: transparent;
+  .navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7.375rem;
+    .left {
+      width: 8%;
+      @include md {
+        width: 5rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .center {
+      color: $Font-colour;
+      font-size: 12px;
+      font-weight: 500;
+      width: 70%;
+      ul {
+        display: flex;
+        gap: 1.9rem;
+        align-items: center;
+        justify-content: flex-end;
+        @include md {
+          display: none;
+        }
+        li {
+          padding: 1.5rem 0;
+          cursor: pointer;
+          a {
+            color: $Font-colour;
+          }
+          &:hover {
+            border-bottom: 0.1rem solid $Font-colour;
+          }
+        }
+      }
+    }
+    .right {
+      a {
+        display: flex;
+        gap: 0.2rem;
+        align-items: center;
+        img {
+          @include md {
+            width: 25%;
+          }
+        }
+        span {
+          color: $Font-colour;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

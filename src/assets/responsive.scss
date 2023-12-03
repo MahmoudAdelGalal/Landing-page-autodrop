@@ -1,0 +1,13 @@
+// varibles
+$md: 768px;
+$lg: 1024px;
+@mixin md {
+  @media screen and (max-width: $md) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width: $lg) {
+    @content;
+  }
+}
